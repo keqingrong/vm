@@ -25,8 +25,8 @@ import { runInNewContext } from 'ya-vm';
 const sandbox = {
   x: 2
 };
-
-runInNewContext('function add(a) { return a+x; }; add(42);', sandbox).then((result) => {
+const code = 'function add(a) { return a+x; }; add(42);';
+runInNewContext(code, sandbox).then((result) => {
   console.log(result); // 44
 }, (error) => {
   console.error(error);
