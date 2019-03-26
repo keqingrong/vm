@@ -1,18 +1,18 @@
 {
-  "name": "ya-vm",
-  "version": "0.0.0",
-  "description": "Yet another utility like Node's vm module for browsers",
-  "main": "dist/ya-vm.umd.js",
-  "module": "dist/ya-vm.esm.js",
+  "name": "@keqingrong/vm",
+  "version": "0.1.0",
+  "description": "A JavaScript utility like Node's vm module for browsers",
+  "main": "dist/vm.umd.js",
+  "module": "dist/vm.esm.js",
   "scripts": {
     "build": "rollup -c && npm run minify",
     "watch": "rollup -w -c",
     "open": "opn http://localhost:3000/example/",
     "serve": "serve -l 3000 ./",
     "start": "npm-run-all -p watch serve open",
-    "minify": "terser dist/ya-vm.umd.js --comments -c -m -o dist/ya-vm.umd.min.js"
+    "minify": "terser dist/vm.umd.js --comments -c -m -o dist/vm.umd.min.js"
   },
-  "repository": "keqingrong/ya-vm",
+  "repository": "keqingrong/vm",
   "keywords": [
     "eval",
     "sandbox",

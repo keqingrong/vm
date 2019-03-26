@@ -1,9 +1,10 @@
 import {
   author,
-  name,
+  name as fullName,
   version
 } from './package.json';
 
+const name = fullName.split('/').pop();
 const banner = `/* @license ${name} v${version} | (c) ${author} */`;
 
 const config = {
@@ -15,7 +16,7 @@ const config = {
     },
     {
       file: `dist/${name}.umd.js`,
-      name: 'YaVM',
+      name: 'VM',
       format: 'umd',
       banner: banner
     }
