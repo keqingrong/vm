@@ -4,7 +4,7 @@
 
 > A JavaScript utility like Node's vm module for browsers
 
-Live demo available at [here](https://keqingrong.github.io/@keqingrong/vm/example/).
+Live demo available at [here](https://keqingrong.github.io/vm/example/).
 
 ## Installation
 
@@ -14,8 +14,8 @@ $ npm install @keqingrong/vm
 
 The CDN build is also available on unpkg:
 
-- [unpkg.com/@keqingrong/vm/dist/@keqingrong/vm.umd.js](https://unpkg.com/@keqingrong/vm/dist/tiny-save-as.umd.js)
-- [unpkg.com/@keqingrong/vm/dist/@keqingrong/vm.umd.min.js](https://unpkg.com/@keqingrong/vm/dist/@keqingrong/vm.umd.min.js)
+- [unpkg.com/@keqingrong/vm/dist/vm.umd.js](https://unpkg.com/@keqingrong/vm/dist/vm.umd.js)
+- [unpkg.com/@keqingrong/vm/dist/vm.umd.min.js](https://unpkg.com/@keqingrong/vm/dist/vm.umd.min.js)
 
 ## Usage
 
