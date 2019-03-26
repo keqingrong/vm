@@ -1,6 +1,6 @@
 {
   "name": "@keqingrong/vm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JavaScript utility like Node's vm module for browsers",
   "main": "dist/vm.umd.js",
   "module": "dist/vm.esm.js",
