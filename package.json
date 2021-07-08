@@ -4,6 +4,7 @@
   "description": "A JavaScript utility like Node's vm module for browsers",
   "main": "dist/vm.umd.js",
   "module": "dist/vm.esm.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "build": "rollup -c && npm run minify",
     "prepack": "npm run build",

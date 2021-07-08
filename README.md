@@ -33,6 +33,12 @@ runInNewContext(code, sandbox).then((result) => {
 });
 ```
 
+## API
+
+- `runInNewContext(code, sandbox, options)`
+- `runInNewIframe(code, sandbox)`
+- `runInNewWorker(code, sandbox)`
+
 ## License
 
 MIT
