@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@keqingrong/vm.svg)](https://www.npmjs.com/package/@keqingrong/vm)
 
-> A JavaScript utility like Node's vm module for browsers
+> A JavaScript utility like [Node's vm module](https://nodejs.org/api/vm.html) for browsers
 
 Live demo available at [here](https://keqingrong.github.io/vm/example/).
 
