@@ -6,6 +6,7 @@
   "module": "dist/vm.esm.js",
   "scripts": {
     "build": "rollup -c && npm run minify",
+    "prepack": "npm run build",
     "watch": "rollup -w -c",
     "open": "opn http://localhost:3000/example/",
     "serve": "serve -l 3000 ./",

@@ -36,10 +36,12 @@ self.onmessage = (event) => {
  */
 function runInNewWorker(code, sandbox) {
   return new Promise((resolve, reject) => {
-    const workerTemplateBlob = new Blob([workerTemplate], { type: 'application/javascript' });
+    const workerTemplateBlob = new Blob([workerTemplate], {
+      type: 'application/javascript'
+    });
     const workerURL = URL.createObjectURL(workerTemplateBlob);
     const worker = new Worker(workerURL);
-    worker.onmessage = (event) => {
+    worker.onmessage = event => {
       const { type, data, message } = event.data;
       if (type === 'eval') {
         resolve(data);
@@ -49,7 +51,7 @@ function runInNewWorker(code, sandbox) {
       worker.terminate();
       URL.revokeObjectURL(workerURL);
     };
-    worker.onerror = (event) => {
+    worker.onerror = event => {
       reject(new Error(event.message));
       worker.terminate();
       URL.revokeObjectURL(workerURL);
@@ -113,8 +115,4 @@ function runInNewContext(code, sandbox, options = {}) {
   }
 }
 
-export {
-  runInNewContext,
-  runInNewIframe,
-  runInNewWorker
-};
+export { runInNewContext, runInNewIframe, runInNewWorker };
